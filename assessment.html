@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Efficiency Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="textbook">
+        <h1>Energy Efficiency Assessment</h1>
+
+        <section class="chapter">
+            <h2>Quiz: Test Your Knowledge</h2>
+
+            <!-- Question 1 -->
+            <div class="question">
+                <h3>1. What is the main goal of energy efficiency?</h3>
+                <form id="quiz">
+                    <input type="radio" id="q1a1" name="q1" value="a">
+                    <label for="q1a1">A) Increasing energy production</label><br>
+                    <input type="radio" id="q1a2" name="q1" value="b">
+                    <label for="q1a2">B) Reducing energy consumption without compromising performance</label><br>
+                    <input type="radio" id="q1a3" name="q1" value="c">
+                    <label for="q1a3">C) Maximizing fossil fuel use</label><br>
+                </form>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <h3>2. Which NASA initiative focuses on sustainable building design?</h3>
+                <form>
+                    <input type="radio" id="q2a1" name="q2" value="a">
+                    <label for="q2a1">A) NASA Spinoff Program</label><br>
+                    <input type="radio" id="q2a2" name="q2" value="b">
+                    <label for="q2a2">B) NASA POWER Data Portal</label><br>
+                    <input type="radio" id="q2a3" name="q2" value="c">
+                    <label for="q2a3">C) NASA Sustainability Initiatives</label><br>
+                </form>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <h3>3. What is a key challenge for energy storage solutions?</h3>
+                <form>
+                    <input type="radio" id="q3a1" name="q3" value="a">
+                    <label for="q3a1">A) Developing systems that balance supply and demand</label><br>
+                    <input type="radio" id="q3a2" name="q3" value="b">
+                    <label for="q3a2">B) Finding locations for storage</label><br>
+                    <input type="radio" id="q3a3" name="q3" value="c">
+                    <label for="q3a3">C) Making energy storage illegal</label><br>
+                </form>
+            </div>
+
+            <button onclick="checkAnswers()">Submit</button>
+            <p id="score"></p>
+        </section>
+
+        <section class="chapter">
+            <h2>Practice Activities: Critical Thinking</h2>
+            <ul>
+                <li><strong>Energy Audit:</strong> Conduct an energy audit of your home or school. Measure the energy consumption of different appliances, and suggest ways to reduce overall energy use. Discuss which measures would have the greatest impact.</li>
+                <li><strong>Debate:</strong> Host a debate on the topic: "Which renewable energy source is the most efficient for large-scale use?" This encourages students to explore various perspectives on energy efficiency and renewable energy.</li>
+                <li><strong>Case Study:</strong> Analyze a case study on a company or city that has implemented energy efficiency measures. What were the results, and how can these strategies be improved or adapted for other regions?</li>
+                <li><strong>Design Challenge:</strong> Design an energy-efficient building using sustainable materials. Consider factors such as energy consumption, insulation, heating, and cooling systems.</li>
+            </ul>
+        </section>
+
+        <section class="chapter">
+            <h2>Thinking Programs to Boost Critical Thinking</h2>
+            <ul>
+                <li><strong>Socratic Questioning:</strong> Encourage students to question assumptions about energy efficiency, such as, "Why is energy efficiency important?" or "How do energy-efficient technologies affect economic growth?"</li>
+                <li><strong>Problem-Based Learning:</strong> Present students with real-world energy problems, like the challenge of making electric cars more efficient, and ask them to come up with innovative solutions.</                <li><strong>Mind Mapping:</strong> Have students create mind maps to visually explore the interconnectedness of energy efficiency, environmental impacts, economic benefits, and technological innovations.</li>
+                <li><strong>Role-Playing:</strong> Assign roles such as energy policy makers, engineers, and environmentalists, and simulate a scenario where they must negotiate policies that balance energy efficiency with economic growth and sustainability.</li>
+            </ul>
+        </section>
+
+        <section class="chapter">
+            <h2>Conclusion</h2>
+            <p>Through these assessments and activities, students can deepen their understanding of energy efficiency and develop the critical thinking skills needed to solve complex global challenges related to sustainability.</p>
+        </section>
+    </div>
+
+    <script>
+        function checkAnswers() {
+            let score = 0;
+
+            if (document.getElementById('q1a2').checked) {
+                score++;
+            }
+
+            if (document.getElementById('q2a3').checked) {
+                score++;
+            }
+
+            if (document.getElementById('q3a1').checked) {
+                score++;
+            }
+
+            document.getElementById('score').textContent = "Your score: " + score + "/3";
+        }
+    </script>
+</body>
+</html>
